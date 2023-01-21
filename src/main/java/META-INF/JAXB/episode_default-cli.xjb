@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2023.01.11 a las 05:42:34 AM ECT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://distribuidas.com/practicaws">
+    <schemaBindings map="false">
+      <package name="com.distribuidas.practicaws.students"/>
+    </schemaBindings>
+    <bindings scd="tns:getStudentResponse">
+      <class ref="com.distribuidas.practicaws.students.GetStudentResponse"/>
+    </bindings>
+    <bindings scd="~tns:Student">
+      <class ref="com.distribuidas.practicaws.students.Student"/>
+    </bindings>
+    <bindings scd="tns:getStudentRequest">
+      <class ref="com.distribuidas.practicaws.students.GetStudentRequest"/>
+    </bindings>
+  </bindings>
+</bindings>
+

@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://distribuidas.com/practicaws">
+
+<soapenv:Header/>
+<soapenv:Body>
+<us:getstudentrequest>
+    <us:name>
+        Sam
+    </us:name>
+</us:getstudentrequest>
+</soapenv:Body>
+</soapenv:Envelope>

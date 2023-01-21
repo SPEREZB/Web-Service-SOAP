@@ -1,0 +1,33 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://distribuidas.com/practicaws"
+            targetNamespace="http://distribuidas.com/practicaws"
+            elementFormDefault="qualified">
+
+
+    <xsd:element name="getStudentResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Studentr"   type="tns:Student"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="getStudentRequest">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="name"   type="tns:Student"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:complexType name="Student">
+        <xsd:sequence>
+            <xsd:element name="name"   type="xsd:string"/>
+            <xsd:element name="last_name" type="xsd:string"/>
+            <xsd:element name="age"   type="xsd:int"/>
+            <xsd:element name="civil_status"  type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="country" type="xsd:NMTOKEN" fixed="US"/>
+    </xsd:complexType>
+</xsd:schema>
